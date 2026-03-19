@@ -145,7 +145,7 @@ export default function Index() {
             <h1 className="font-montserrat font-extrabold text-white text-5xl md:text-6xl leading-tight mb-6">
               Ремонт<br />
               <span className="text-tasman-blue-accent">компьютеров</span><br />
-              в Москве
+              в Красноярске
             </h1>
 
             <p className="text-white/70 text-lg font-ibm font-light leading-relaxed mb-10 max-w-xl">
@@ -461,7 +461,7 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: "Phone", title: "Телефон", lines: ["+7 (495) 000-00-00", "+7 (800) 000-00-00"], sub: "Пн–Сб, 09:00–20:00" },
-              { icon: "MapPin", title: "Адрес", lines: ["г. Москва,", "ул. Примерная, д. 1"], sub: "Рядом с метро" },
+              { icon: "MapPin", title: "Адрес", lines: ["г. Красноярск,", "ул. Примерная, д. 1"], sub: "Рядом с остановкой" },
               { icon: "Mail", title: "Email", lines: ["info@tasman.ru"], sub: "Ответим в течение часа" },
             ].map((c) => (
               <div key={c.title} className="text-center p-8 bg-tasman-gray-bg rounded-xl border border-gray-100">
