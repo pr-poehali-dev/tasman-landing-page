@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+		"./1773897142313066346.html"
 	],
 	prefix: "",
 	theme: {
@@ -18,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+				ibm: ['IBM Plex Sans', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,6 +57,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				tasman: {
+					blue: '#1A3A5C',
+					'blue-mid': '#1E5F9A',
+					'blue-light': '#2E86DE',
+					'blue-accent': '#4BA3E3',
+					gray: '#3A4A5C',
+					'gray-light': '#8FA3B8',
+					'gray-bg': '#F4F7FB',
+					dark: '#0D1F2D',
+					white: '#FFFFFF',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -70,25 +86,32 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'fade-in': {
+					from: { opacity: '0', transform: 'translateY(24px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
+				},
+				'fade-in-fast': {
+					from: { opacity: '0' },
+					to: { opacity: '1' }
+				},
+				'slide-up': {
+					from: { opacity: '0', transform: 'translateY(40px)' },
+					to: { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.7s ease-out forwards',
+				'fade-in-fast': 'fade-in-fast 0.4s ease-out forwards',
+				'slide-up': 'slide-up 0.8s ease-out forwards',
 			}
 		}
 	},
