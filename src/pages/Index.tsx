@@ -3,7 +3,8 @@ import Icon from "@/components/ui/icon";
 
 type AnyIcon = Parameters<typeof Icon>[0]["name"];
 
-const HERO_IMG = "https://cdn.poehali.dev/projects/bc5f95d1-ec7d-422d-a450-1934c60590bb/files/c3b5cc42-4efe-438c-9bfe-b6091e6131d4.jpg";
+const HERO_IMG = "https://cdn.poehali.dev/projects/bc5f95d1-ec7d-422d-a450-1934c60590bb/files/3da6f449-1a21-4f6c-90e2-7810d9e64211.jpg";
+const LOGO_IMG = "https://cdn.poehali.dev/projects/bc5f95d1-ec7d-422d-a450-1934c60590bb/bucket/07b26671-8e1e-456f-865f-bce9189f27de.jpg";
 
 const SERVICES = [
   { icon: "Monitor", title: "Диагностика", desc: "Полная компьютерная диагностика любой сложности за 30 минут" },
@@ -76,9 +77,7 @@ export default function Index() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-tasman-blue/95 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-tasman-blue-light rounded flex items-center justify-center">
-              <Icon name="Monitor" size={18} className="text-white" />
-            </div>
+            <img src={LOGO_IMG} alt="Тасман логотип" className="w-9 h-9 rounded object-cover bg-white" />
             <span className="font-montserrat font-bold text-white text-lg tracking-wide">ТАСМАН</span>
           </div>
 
@@ -483,9 +482,7 @@ export default function Index() {
       <footer className="bg-tasman-dark py-10 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-7 h-7 bg-tasman-blue-light rounded flex items-center justify-center">
-              <Icon name="Monitor" size={15} className="text-white" />
-            </div>
+            <img src={LOGO_IMG} alt="Тасман логотип" className="w-8 h-8 rounded object-cover bg-white" />
             <span className="font-montserrat font-bold text-white text-base tracking-wide">ТАСМАН</span>
           </div>
           <p className="text-white/40 font-ibm text-sm">© 2024 Тасман. Все права защищены.</p>
